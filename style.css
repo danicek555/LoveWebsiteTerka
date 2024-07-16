@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'cheri';
+    src: url('/terka/cheri.regular.ttf') format('woff2'); /* Replace with the actual path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: cheri, Arial;
+    background-color: #940B92;
+    z-index: 1;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+h1 {
+    color: #E95793;
+    font-size: 75px;
+    z-index: 2;
+    text-align: center;
+}
+h1:hover {
+    color: #f34e92;
+}
+  /* Styles for the animation */
+  .hidden3s {
+    opacity: 0; /* Text initially hidden */
+    transition: opacity 3s ease-in-out; /* Smooth transition */
+  }
+  .hidden5s {
+    opacity: 0; /* Text initially hidden */
+    transition: opacity 5s ease-in-out; /* Smooth transition */
+  }
+  .hidden7s {
+    opacity: 0; /* Text initially hidden */
+    transition: opacity 7s ease-in-out; /* Smooth transition */
+  }
+
+
+  .visible {
+    opacity: 1; /* Text becomes visible */
+  }
+
+.containerDM {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    margin: 0 auto; /* Center horizontally */
+}
+.tlacitkaDate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+}
+#noButton {
+    background-color: #FF4DC7
+}
+#yesButton {
+    background-color: #FF5757;
+}
+.mujcss {
+    text-align: center;
+
+    
+}
+p{
+    text-align: center;
+    font-size: 35px;
+    z-index: 2;
+}
+
+.DT {
+    margin-right: 70px;
+}
+.bottomButtons {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    padding: 10px; /* Optional padding to adjust spacing */
+    z-index: 1;
+
+}
+.envelope {
+    width: 90px;
+    height: 90px;
+    animation: topToBottom 6s ease infinite ;
+    z-index: 0;
+    margin: 30px;
+    cursor: crosshair;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+}
+.srdicko {
+    width: 50px;
+    height: 50px;
+    animation: topToBottom 6s ease infinite ;
+    z-index: 0;
+    margin: 30px;
+    cursor: crosshair;
+    position: absolute;
+    top: -50px;
+    left: 0px;
+}
+.srdicko1 {
+    width: 50px;
+    height: 50px;
+    animation: topToBottom 5s ease infinite ;
+    animation-delay: 0.2s;
+    z-index: 0;
+    margin: 30px;
+    cursor: crosshair;
+    position: absolute;
+    top: -50px;
+    left: 10%;
+}
+.srdicko2 {
+    width: 50px;
+    height: 50px;
+    animation: topToBottom 4s ease infinite ;
+    animation-delay: 0.4s;
+    z-index: 0;
+    margin: 30px;
+    cursor: crosshair;
+    position: absolute;
+    top: -50px;
+    left: 20%;
+}
+.srdicko3 {
+    width: 50px;
+    height: 50px;
+    animation: topToBottom 6s ease infinite ;
+    z-index: 0;
+    margin: 35px;
+    cursor: crosshair;
+    position: absolute;
+    top: -50px;
+    left: 30%;
+}
+.srdicko4 {
+    width: 50px;
+    height: 50px;
+    animation: topToBottom 5s ease infinite ;
+    z-index: 0;
+    margin: 35px;
+    cursor: crosshair;
+    position: absolute;
+    top: -50px;
+    left: 40%;
+}
+.srdicko5 {
+    width: 50px;
+    height: 50px;
+    animation: topToBottom 8s ease infinite ;
+    animation-delay: 0.5s;
+    z-index: 0;
+    margin: 35px;
+    cursor: crosshair;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+}
+.srdicko6 {
+    width: 50px;
+    height: 50px;
+    animation: topToBottom 7s ease infinite ;
+    z-index: 0;
+    margin: 35px;
+    cursor: crosshair;
+    position: absolute;
+    top: -50px;
+    left: 60%;
+}
+.srdicko7 {
+    width: 50px;
+    height: 50px;
+    animation: topToBottom 4s ease infinite ;
+    animation-delay: 2s;
+    z-index: 0;
+    margin: 35px;
+    cursor: crosshair;
+    position: absolute;
+    top: -50px;
+    left: 70%;
+}
+.srdicko8 {
+    width: 50px;
+    height: 50px;
+    animation: topToBottom 6s ease infinite ;
+    animation-delay: 0.3s;
+    z-index: 0;
+    margin: 35px;
+    cursor: crosshair;
+    position: absolute;
+    top: -50px;
+    left: 80%;
+
+}
+.srdicko9 {
+    width: 50px;
+    height: 50px;
+    animation: topToBottom 8s ease infinite ;
+    z-index: 0;
+    margin: 35px;
+    cursor: crosshair;
+    position: absolute;
+    top: -50px;
+    left: 90%;
+    
+}
+.srdicko10 {
+    width: 50px;
+    height: 50px;
+    animation: topToBottom 7s ease infinite  ;
+    animation-delay: 1s;
+    z-index: 0 ;
+    margin: 35px;
+    cursor: crosshair;
+    position: absolute;
+    top: -50px;
+    left: 100%;
+}
+
+@keyframes topToBottom {
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(calc(100vh + 50px));
+    }
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .bottomButtons {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px; /* Adjust padding as needed */
+    }
+    .srdicko2,
+    .srdicko4,
+    .srdicko5,
+    .srdicko8,
+    .srdicko9,
+    .srdicko10{
+        visibility: hidden;
+    }
+}

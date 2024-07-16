@@ -1,0 +1,66 @@
+.zkouska1 {
+    margin-top: -50px;
+}
+.zkouska2 {
+    margin-top: -100px;
+}
+.zkouska3 {
+    margin-top: -45px;
+}
+body {
+    background-color:#940B92 ;
+    overflow-x: hidden
+}
+.zkouska4 {
+    margin-top: -120px;
+}
+.zkouska5 {
+    margin-top: -290px;
+}
+.foto18{
+    margin-top: -720px;
+}
+.foto19{
+    margin-top: -1200px;
+}
+
+#clickOnMeSrdce{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    transform: rotate(90deg);
+    margin-left: 2px;
+    cursor: pointer;
+}
+body {
+    position: relative;
+    margin: 0;
+    font-family: cheri, Arial;
+    z-index: 1;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+    .zkouska2,
+    .zkouska1,
+    .zkouska3,
+    .zkouska5,
+    .zkouska4{
+        margin-top: -25px;
+    }
+    .foto16{
+        margin-top: -20px;
+    }
+    .foto12{
+        margin-top: -25px;
+    }
+    .foto5{
+        margin-top: -25px;
+    }
+    .foto18{
+        margin-top: -20px;
+    }
+    .foto19{
+        margin-top: -20px;
+    }
+}

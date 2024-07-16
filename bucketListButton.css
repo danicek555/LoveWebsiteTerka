@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'cheri';
+    src: url('/terka/cheri.regular.ttf') format('woff2'); /* Replace with the actual path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: cheri, Arial;
+    background-color: #940B92;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between items as needed */
+
+    margin: auto; /* Horizontally centers the container */
+
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    gap: 10px; /* Adjust the gap between items as needed */
+    max-width: 1000px;
+    max-height: 500px;
+    margin: auto;
+    list-style-type: none;
+    z-index: 1;
+    
+    opacity: 1;
+}
+#clickOnMeSrdce {
+    width: 17px;
+    height: 17px;
+    position: static;
+    margin-left: 0;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.container li {
+    display: flex;
+    align-items: center;
+   
+}
+
+input[type="checkbox"] {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    appearance: none;
+    border: 3px solid #E95793;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 150px;
+    background-size: cover; /* Ensures the image covers the entire checkbox */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+input[type="checkbox"]:checked {
+   
+    background-image: url('/terka/srdicko2.png'); /* Add your image URL here */
+    border: 0px;
+}
+
+input[type="checkbox"] + li {
+    display: inline-block; /* Displays list items inline */
+    margin-bottom: 10px; /* Adds space between list items */
+    position: relative; /* Positions list items relative to checkboxes */
+}
+label {
+    flex-grow: 1; /* Allow label to grow to fill remaining space */
+    font-size: 19px;
+    color: #fea0ff;
+}
+.image {
+    background-image: url("./srdicka2.png");
+    background-size: cover; /* Adjust background image size as needed */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center; /* Center the background image */
+    z-index: 0;
+    
+    
+}
+
+@media (max-width: 768px) {
+    body{
+        overflow-y: scroll;
+    }
+    .container{
+       
+        display: inline-block; /* Display the container as a block element */
+        width: 100vh    ; /* Set the width to 100% */
+        height: 100vh;
+       margin: auto;
+       /*  height: 100vh; /* Set the height to 100% of the viewport height */
+       
+        padding: 20px; /* Add padding for better spacing */
+
+    }
+    ul{
+        height: 100vh;
+        width: 100vh;
+        margin: auto ;
+        
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .image {
+        background-image: url("./srdicka2.png");
+        background-size: cover; /* Adjust background image size as needed */
+        background-repeat: repeat; /* Prevent background image from repeating */
+        background-position: center; /* Center the background image */
+        z-index: 0;
+        
+        
+    }
+    input[type="checkbox"] {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        appearance: none;
+        border: 3px solid #E95793;
+        border-radius: 5px;
+        cursor: pointer;
+        
+   
+        background-size: cover; /* Ensures the image covers the entire checkbox */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+    }
+    label{
+        display: inline-block;
+     
+    }
+}
+

@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'cheri';
+    src: url('/terka/cheri.regular.ttf') format('woff2'); /* Replace with the actual path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: cheri, Arial;
+    background-color: #940B92;
+    z-index: 1;
+    overflow: hidden;
+}
+h1 {
+    color: #E95793;
+    font-size: 75px;
+    z-index: 2;
+    text-align: center;
+}
+#clickOnMeSrdce {
+    width: 17px;
+    height: 17px;
+    position: relative;
+    transform: rotate(90deg);
+    margin-left: 2px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.love {
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.srdceProcenta {
+    width: 500px;
+    height: 500px;
+}
+.prostredek {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+h2 {
+    position: absolute;
+    margin-bottom: 65px;
+}

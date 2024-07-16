@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'cheri';
+    src: url('/terka/cheri.regular.ttf') format('woff2'); /* Replace with the actual path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: cheri, Arial;
+    background-color: #940B92;
+    z-index: 1;
+    overflow: hidden;
+}
+.container {
+    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Creates 10 columns of equal width */
+    gap: 10px; /* Adjust the gap between paragraphs as needed */
+}
+img {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    transform: rotate(90deg);
+    margin-left: 2px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    body{
+        overflow: scroll
+    }
+    .container {
+    
+        display: grid;
+        grid-template-columns: repeat(10, 1fr); /* Creates 10 columns of equal width */
+        gap: 0px; /* Adjust the gap between paragraphs as needed */
+        height: 100vh;
+        
+    }
+    p {
+        margin: 0; /* Remove default margin for paragraphs */
+        padding: 5px; /* Add padding for better spacing */
+        text-align: center; /* Center-align text */
+        
+    }
+
+}

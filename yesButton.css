@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'cheri';
+    src: url('/terka/cheri.regular.ttf') format('woff2'); /* Replace with the actual path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: cheri, Arial;
+    background-color: #940B92;
+    z-index: 1;
+    overflow: scroll;
+}
+h1 {
+    color: #E95793;
+    font-size: 50px;
+    z-index: 2;
+    text-align: center;
+}
+.omg {
+    font-size: 75px ;
+    margin-top: 10px;
+}
+img {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    transform: rotate(90deg);
+    margin-left: 2px;
+    cursor: pointer;
+}
+.dateForm {
+    text-align: center;
+    border: 2px solid #ccc; /* Border style */
+    padding: 20px; /* Padding around the form */
+    width: 800px; /* Set the width of the box */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-bottom: 30px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.submit { 
+    background-color: #E95793;
+    font-family: cheri, Arial;
+    border-radius: 20px;
+    margin-top: 10px;
+
+}
+.padding {
+    margin: 0;
+    margin-top: 25px;
+}
+.hide {
+    visibility: hidden;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .dateForm {
+        width: 100%;
+       border: 0;
+    }
+}
